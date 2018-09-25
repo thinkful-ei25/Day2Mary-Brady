@@ -2,19 +2,19 @@
 
 //Functions as arguments(1)
 
- function repeat(callback,number){
-    for(let i=0; i < number; i++){
-        callback();
-    }
+function repeat(callback,number){
+  for(let i=0; i < number; i++){
+    callback();
+  }
 } 
 
 
 function hello() {
-    console.log('Hello world');
+  console.log('Hello world');
 }
 
 function goodbye() {
-    console.log('Goodbye world');
+  console.log('Goodbye world');
 }
 
 repeat(hello, 5);
@@ -34,8 +34,6 @@ function filter(arr, callback) {
   return newArray;
 }
 
-
-
 // First we setup an array of strings we plan to filter:
 const myNames = ['Rich', 'Joe', 'Bhaumik', 'Ray'];
 
@@ -44,23 +42,23 @@ const filteredNames = filter(myNames, function(name) {
   return name[0] === 'R';
 });
 
-console.log(filteredNames) // => ['Rich', 'Ray']
-// 
+console.log(filteredNames); // => ['Rich', 'Ray']
+
 
 
 //functions as return values
 
 function hazardWarningCreator(typeOfWarning) {
-    let warningCounter = 0;
-    let x = 'time';
-    return function(location) {
-        warningCounter++;
-        if(warningCounter >= 2){
-            x='times'
-        }
-        console.log(`DANGER! There is a ${typeOfWarning} hazard at ${location}!`)
-        console.log(`The ${typeOfWarning} hazard alert has triggered ${warningCounter} ${x} today!`)
+  let warningCounter = 0;
+  let x = 'time';
+  return function(location) {
+    warningCounter++;
+    if(warningCounter >= 2){
+      x='times';
     }
+    console.log(`DANGER! There is a ${typeOfWarning} hazard at ${location}!`);
+    console.log(`The ${typeOfWarning} hazard alert has triggered ${warningCounter} ${x} today!`);
+  };
 
 }
 
@@ -79,3 +77,21 @@ floodFireWarning(city1);
 beeEarthquakeWarning(city2);
 beeEarthquakeWarning(city1);
 beeEarthquakeWarning(city3);
+
+//forEach, filter and map
+let testArray = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
+//let testArray = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
+
+testArray.filter(steps => steps[0] >= 0 && steps[1] >= 0)
+//[[0, 0], [0, 5], [3, 2]];
+
+.map(sum => sum[0] + sum[1])
+//[0, 5, 5 ];
+
+.forEach(turtle => console.log(`The turtle took ${turtle} steps.`));
+//"The turtle took 0 steps"
+//"the t took 5"
+//"the t took 5"
+
+  
+    
