@@ -1,5 +1,5 @@
 'use strict';
-/*
+
 function max(numbers){
   let largestNumber = numbers[0];
   let counter = 1;
@@ -16,11 +16,10 @@ function max(numbers){
 
 
 
-//Tests
+//tests
 let testArray = [1, 4, 5, 6, 10, 100, 4, 2];
-
 max(testArray); 
-*/
+
 
 
 function min(numbers) {
