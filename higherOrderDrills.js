@@ -95,14 +95,31 @@ testArray.filter(steps => steps[0] >= 0 && steps[1] >= 0)
 */
 // reduce drill
 
-let input = 'noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest'
-  let reduceArray = input.split(" ");
-  console.log(reduceArray);
-function 
-if (index.length <= 3)
+
+
+
+const input = 'noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest';
+let reduceArray = input.split(' ');
+const accum = (accum, initialValue) => (initialValue.length === 3) ? accum + ' ' : accum + initialValue[initialValue.length-1];
+
+console.log(reduceArray.reduce(accum, '').toUpperCase());
+
+
+
+
 
 
 
 
 //.toUpperCase
+// "the cat moon time bye"
+//Accumulator = "";
+//current value
+
+// if 3 char = " "
+// accumulator = " "
+// accumulator = "  "
+// accumulator = " N"
+// accumulator = " NT"
+
     
