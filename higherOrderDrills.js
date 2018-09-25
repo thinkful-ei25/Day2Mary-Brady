@@ -110,16 +110,4 @@ console.log(reduceArray.reduce(accum, '').toUpperCase());
 
 
 
-
-//.toUpperCase
-// "the cat moon time bye"
-//Accumulator = "";
-//current value
-
-// if 3 char = " "
-// accumulator = " "
-// accumulator = "  "
-// accumulator = " N"
-// accumulator = " NT"
-
     
