@@ -23,16 +23,16 @@ max(testArray);
 
 
 function min(numbers) {
- let smallestNumber = numbers[0];
- let counter = 1;
- while (counter <= numbers.length) {
-  if (numbers[counter] < smallestNumber) {
-    smallestNumber = numbers[counter];
+  let smallestNumber = numbers[0];
+  let counter = 1;
+  while (counter <= numbers.length) {
+    if (numbers[counter] < smallestNumber) {
+      smallestNumber = numbers[counter];
+    }
+    counter++;
   }
-  counter++;
- }
- console.log(smallestNumber);
-return smallestNumber;
+  console.log(smallestNumber);
+  return smallestNumber;
 }
 
 //tests
