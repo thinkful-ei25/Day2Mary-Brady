@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 //Functions as arguments(1)
 
 function repeat(callback,number){
@@ -92,6 +92,17 @@ testArray.filter(steps => steps[0] >= 0 && steps[1] >= 0)
 //"The turtle took 0 steps"
 //"the t took 5"
 //"the t took 5"
+*/
+// reduce drill
 
-  
+let input = 'noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest'
+  let reduceArray = input.split(" ");
+  console.log(reduceArray);
+function 
+if (index.length <= 3)
+
+
+
+
+//.toUpperCase
     
